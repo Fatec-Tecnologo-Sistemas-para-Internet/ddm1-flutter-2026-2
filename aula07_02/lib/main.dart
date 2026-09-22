@@ -39,13 +39,21 @@ class MyApp extends StatelessWidget {
       width: double.infinity,
       color: Colors.white,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
         children: [
           _x_field(),
           _y_field(),
-          _plus_button(),
-          _sub_button(),
-          _times_button(),
-          _div_button()
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: [  
+              _plus_button(),
+              _sub_button(),
+              _times_button(),
+              _div_button()
+            ],
+          )
         ],
       ),
     );
